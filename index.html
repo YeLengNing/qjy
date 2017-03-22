@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>范首页</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/swiper-3.4.1.min.js"></script>
+    <script src="js/shop.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <style>
+        .swiper-container {width: 100%;padding-top: 0;padding-bottom: 50px;}
+        .swiper-slide {background-position: center;background-size: cover;width: 300px;height: 300px;}
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="header">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="kuang">
+            <p><a href="./index.html" base="_self" style="color: red;">首页</a></p>
+            <p><a href="./type.html" base="_self">分类</a></p>
+            <p><a href="./collocation.html" base="_self">搭配</a></p>
+            <p><a href="./details.html" base="_self">详情</a></p>
+            <p><a href="./search.html" base="_self">搜索</a></p>
+            <p><a href="./login.html" base="_self">登录</a></p>
+            <p><a href="./admin.html" base="_self">我的</a></p>
+            <p><a href="./shoppingCart.html" base="_self">购物袋</a></p>
+        </div>
+        <div class="lun">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(image/shouye/banner01.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(image/shouye/banner02.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(image/shouye/banner03.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(image/shouye/banner04.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(image/shouye/banner05.png)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="pinpai">
+                <span>优选品牌</span>
+            <div class="pai">
+                <div class="pai_one"><img src="./image/shouye/shouye-youxuan01.png" alt=""/></div>
+                <div class="pai_one"><img src="./image/shouye/shouye-youxuan02.png" alt=""/></div>
+                <div class="pai_one"><img src="./image/shouye/shouye-youxuan03.png" alt=""/></div>
+            </div>
+            <div class="pai_type">
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai01.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai02.png" alt=""/>
+                </div>
+                    <img src="./image/shouye/shouye-pinpai03.png" alt=""/>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai04.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai05.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai06.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai07.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai08.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai09.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai10.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai11.png" alt=""/>
+                </div>
+                <div class="pai_img">
+                    <img src="./image/shouye/shouye-pinpai12.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        loop:true,
+        autoplay:1000,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+</script>
+</html>
